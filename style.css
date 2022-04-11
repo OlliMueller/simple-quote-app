@@ -42,10 +42,6 @@ h1 {
   flex-shrink: 0;
 }
 
-.quote-heading {
-  _background-color: inherit;
-}
-
 .quote-button {
   border-radius: 0.5rem;
   background-color: rgb(43, 113, 244);
@@ -63,10 +59,60 @@ h1 {
 
 .list-style {
   list-style: none;
-  font-size: 2rem;
 }
 
 .list-style > p {
-  font-size: 1.5rem;
   color: grey;
+}
+@media screen and (min-width: 500px) {
+  .flexbox-item {
+    margin: 2rem;
+  }
+  .list-style {
+    font-size: 3rem;
+  }
+  .list-style > p {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .flexbox-container {
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .quote-button {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 10rem;
+    height: 3.5rem;
+  }
+  .list-style {
+    font-size: 2.25rem;
+  }
+  .list-style > p {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .flexbox-container {
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .quote-button {
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 7.5rem;
+    height: 3rem;
+  }
+  .list-style {
+    font-size: 1.5rem;
+  }
+  .list-style > p {
+    font-size: 1rem;
+  }
 }
