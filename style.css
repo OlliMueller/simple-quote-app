@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.flexbox-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: lightblue;
+}
+
+.flexbox-container-2 {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: snow;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(34, 37, 41);
+  text-shadow: 1px 1px 1px snow;
+}
+
+.flexbox-item {
+  margin: 3rem;
+  border: none;
+  flex-shrink: 0;
+}
+
+.quote-heading {
+  _background-color: inherit;
+}
+
+.quote-button {
+  border-radius: 0.5rem;
+  background-color: rgb(43, 113, 244);
+  font-size: 2rem;
+  font-weight: 500;
+  color: snow;
+  width: 12rem;
+  height: 4rem;
+}
+
+.quote-button:hover {
+  box-shadow: 0px 0px 0.25rem 0.125rem rgb(43, 113, 244, 0.5);
+  cursor: pointer;
+}
+
+.list-style {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.list-style > p {
+  font-size: 1.5rem;
+  color: grey;
+}
