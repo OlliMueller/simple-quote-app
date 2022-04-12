@@ -10,6 +10,13 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(34, 37, 41);
+  text-shadow: 1px 1px 1px snow;
+}
+
 .flexbox-container {
   height: 300px;
   display: flex;
@@ -25,15 +32,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: snow;
+  _background-color: snow;
   margin-top: 30px;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: rgb(34, 37, 41);
-  text-shadow: 1px 1px 1px snow;
 }
 
 .flexbox-item {
@@ -54,25 +54,36 @@ h1 {
 
 .quote-button:hover {
   box-shadow: 0px 0px 0.25rem 0.125rem rgb(43, 113, 244, 0.5);
+  background-color: snow;
+  color: rgb(43, 113, 244);
+  font-weight: bold;
   cursor: pointer;
 }
 
-.list-style {
-  list-style: none;
+.quote-block {
+  letter-spacing: 0.15rem;
+  color: #000016;
 }
 
-.list-style > p {
-  color: grey;
+.quote-author {
+  color: rgb(125, 133, 137);
 }
+
+.quote-author::before {
+  content: "— ";
+}
+
+/* Media Queries for min-width of 500px, 992px and 1400px*/
+
 @media screen and (min-width: 500px) {
   .flexbox-item {
     margin: 2rem;
   }
-  .list-style {
-    font-size: 3rem;
-  }
-  .list-style > p {
+  .quote-block {
     font-size: 2.5rem;
+  }
+  .quote-author {
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -88,11 +99,11 @@ h1 {
     width: 10rem;
     height: 3.5rem;
   }
-  .list-style {
-    font-size: 2.25rem;
+  .quote-block {
+    font-size: 2rem;
   }
-  .list-style > p {
-    font-size: 1.75rem;
+  .quote-author {
+    font-size: 1.5rem;
   }
 }
 
@@ -109,10 +120,10 @@ h1 {
     width: 7.5rem;
     height: 3rem;
   }
-  .list-style {
+  .quote-block {
     font-size: 1.5rem;
   }
-  .list-style > p {
+  .quote-author {
     font-size: 1rem;
   }
 }
